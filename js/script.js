@@ -36,7 +36,8 @@ if (elementsApparition.length > 0) {
     threshold: 0.2
   });
 
-  elementsApparition.forEach((element) => {
+  elementsApparition.forEach((element, index) => {
+    element.style.setProperty('--delai', `${index * 0.1}s`);
     observateur.observe(element);
   });
 }
