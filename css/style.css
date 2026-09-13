@@ -304,3 +304,25 @@ main img {
   cursor: pointer;
   line-height: 1;
 }
+
+.liste-horaires {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0;
+  max-width: 320px;
+}
+
+.liste-horaires li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.liste-horaires .jour {
+  font-weight: 600;
+}
+
+.liste-horaires .heures {
+  color: #555;
+}
