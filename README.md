@@ -1,31 +1,56 @@
-# 01 - Apprentissage
+# Site vitrine — Boulangerie Martin (projet d'entraînement)
 
-Un petit site web statique réalisé dans le cadre d'un apprentissage, affichant une page d'accueil "Bonjour le monde" avec un sous-titre et un fond bleu clair.
+Site vitrine fictif réalisé en HTML/CSS/JS pur, sans framework ni dépendance,
+dans le cadre d'un apprentissage du développement web avec Claude Code.
 
-## Ce que fait le site
+⚠️ Projet d'entraînement : "Boulangerie Martin" est un client fictif,
+imaginé à partir d'un cahier des charges rédigé pour l'exercice.
 
-Le site affiche une unique page contenant :
-- Un titre "Bonjour le monde"
-- Un sous-titre "Mon premier site avec Claude Code"
-- Un fond de couleur bleu clair, avec le contenu centré au milieu de l'écran
+## Pages du site
 
-## Technologies utilisées
+- **Accueil** — diaporama photo, présentation, atouts de la boulangerie
+- **Produits** — gamme de pains, viennoiseries et pâtisseries en cartes
+- **À propos** — histoire de la boulangerie, galerie photo (lightbox)
+- **Contact** — horaires, adresse, carte Google Maps
 
-- **HTML5** pour la structure de la page
-- **CSS** (intégré directement dans `index.html`) pour la mise en forme
+## Fonctionnalités
 
-Aucune dépendance, framework ou outil de build n'est nécessaire : il s'agit d'un simple fichier HTML autonome.
+- Diaporama photo automatique sur l'accueil
+- Animations d'apparition au scroll (Intersection Observer, effet cascade)
+- Galerie photo cliquable (lightbox)
+- Menu burger responsive
+- Effet de soulignement animé sur la navigation
+- Bouton retour en haut de page
+- Balises meta description par page (SEO)
+
+## Stack technique
+
+- HTML5 sémantique
+- CSS3 (mobile-first, Flexbox/Grid, variables CSS)
+- JavaScript vanilla (aucune librairie)
+- Polices : Fraunces (titres) et Inter (texte), via Google Fonts
 
 ## Lancer le site en local
 
-Aucune installation n'est requise. Deux options :
+Aucune installation nécessaire.
 
-1. **Ouvrir directement le fichier**
-   Double-cliquez sur `index.html`, ou ouvrez-le depuis votre navigateur (`Fichier > Ouvrir`).
-
-2. **Utiliser un petit serveur local** (optionnel, utile pour simuler un vrai déploiement)
-   ```bash
-   # Avec Python 3
+1. **Ouverture directe** : double-cliquez sur `index.html`
+2. **Ou via un serveur local** (optionnel) :
+```bash
    python -m http.server 8000
-   ```
-   Puis ouvrez [http://localhost:8000](http://localhost:8000) dans votre navigateur.
+```
+   Puis ouvrez [http://localhost:8000](http://localhost:8000)
+
+## Structure du projet
+
+```
+├── index.html
+├── produits.html
+├── a-propos.html
+├── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── images/
+```
