@@ -67,3 +67,18 @@ if (lightbox) {
     }
   });
 }
+
+// Bouton retour en haut
+const boutonHaut = document.getElementById('retour-haut');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 400) {
+    boutonHaut.classList.add('visible');
+  } else {
+    boutonHaut.classList.remove('visible');
+  }
+});
+
+boutonHaut.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
